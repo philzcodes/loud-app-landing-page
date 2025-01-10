@@ -58,7 +58,7 @@ p {
 
 span {
     display: contents;
-    color: #fe5f59;
+    color: #0898ef;
 }
 
 /* ------------ all button css ---------- */
@@ -922,6 +922,11 @@ span {
 .download-content ul li a.play-store {
     background-color: #525a63;
 }
+
+
+
+/* ------------ our team css ---------*/
+
 
 /* ----------- footer css --------- */
 
