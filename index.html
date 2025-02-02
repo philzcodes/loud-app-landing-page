@@ -33,9 +33,78 @@
     .shape {
       display: none;
     }
+
+    .header-big{
+      display: none;
+    }
 }
 
   </style>
+
+  
+<style>
+  /* Team Section Styling */
+  .team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .team-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 310px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .team-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .team-card h4 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .team-card span {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .team-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .team-socials {
+    margin-top: 10px;
+  }
+  
+  .team-socials a {
+    font-size: 20px;
+    color: #0077B5; /* LinkedIn Blue */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .team-socials a:hover {
+    color: #005582;
+  }
+  </style>
+  
 </head>
 
 <body>
@@ -116,7 +185,7 @@
       </div>
     </div>
     <!---- navbar end--->
-    <div class="header-hero" data-scroll-index="0">
+    <div class="header-hero header-big" data-scroll-index="0">
       <!---- home star ------>
       <div class="shape shape-1"></div>
       <div class="shape shape-2"></div>
@@ -164,6 +233,82 @@
   </header>
   <!--------   Header End ----  -->
 
+<!-- ----------- Hero Section Start --------- -->
+<section class="hero-section">
+  <div class="hero-overlay">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-logo-title">
+          <img src="/assets/img/header/logo/landapp-logo.png" alt="Loud Logo">
+          <h1 class="wow fadeInUp" data-wow-delay=".2s">Loud</h1>
+        </div>
+        <h2 class="wow fadeInUp" data-wow-delay=".4s">Connecting You to Fun and Cultures</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ----------- Hero Section End --------- -->
+
+<style>
+/* Hero Section - Hidden by Default */
+.hero-section {
+  display: none; /* Hide by default */
+  position: relative;
+  height: 100vh;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Show Hero Section on Small Screens */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    display: flex; /* Show only on small screens */
+  }
+}
+
+.hero-overlay {
+  background: rgb(236, 236, 236);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.hero-logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.hero-logo-title img {
+  width: 70px;
+  height: 50px;
+}
+
+.hero-logo-title h1 {
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hero-content h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+</style>
+
+
     <!-- ----------- Our Story Section Start --------- -->
     <section class="vision-section pt-110" data-scroll-index="7">
       <div class="container">
@@ -199,8 +344,8 @@
       <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-7">
           <div class="section-title text-center mb-30">
-            <h1 class="mb-25  wow fadeInUp" data-wow-delay=".2s">Awsome <span> Features</span></h1>
-            <p class="wow fadeInUp" data-wow-delay=".4s">Here are some the awesome experience you can get from our app
+            <h1 class="mb-25  wow fadeInUp" data-wow-delay=".2s">Awesome <span> Features</span></h1>
+            <p class="wow fadeInUp" data-wow-delay=".4s">Here are some of the awesome experience you can get from our app
             </p>
           </div>
         </div>
@@ -215,7 +360,7 @@
             <div class="content">
               <h3>Performance</h3>
               <p>
-                Experience top-notch performance with optimized solutions designed to handle demanding tasks efficiently.
+                Experience top-notch performance with optimized solutions designed to connect birthdaymates efficiently.
               </p>
             </div>
           </div>
@@ -662,81 +807,66 @@
 <!-- ----------- Growth & Scalability Strategy Section End --------- -->
 
 
-  <!-- ----------- Our team Section Start --------- -->
-  <section class="our-team-section trainer__container pt-110" data-scroll-index="8">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-8 col-lg-10">
-          <div class="section-title text-center pb-30">
-            <h1 class="wow fadeInUp" data-wow-delay=".2s">Our <span>Team</span></h1>
-            <p class="wow fadeInUp" data-wow-delay=".4s">
-             We are not just a group of tech wizards; we are a vibrant tapestry woven from the threads of various walks of life, coming together with one goal; to make Loud a global phenomenon
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-
-        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-          <div class="trainer__card">
-            <img src="assets/img/person.jpg" alt="trainer" width="310" />
-             <h4>Sylvester "The Visionary" (Founder)</h4>
-          <p>Sylvester, who used to be a home builder, <br>
-             now navigates the digital product-loud. <br>
-              His attension to details is unparalleled. <br>
-              Creative at and with product design. Most importantly, a Servant leader.</p>
-         <div class="trainer__socials">
-            <a href="#"><i class="ri-facebook-fill"></i></a>
-            <a href="#"><i class="ri-twitter-fill"></i></a>
-            <a href="#"><i class="ri-youtube-fill"></i></a>
-          </div>
-          </div>
-
-          <div class="trainer__card">
-            <img src="assets/img/person1.jpg" alt="trainer" width="310" />
-            <h4>Ugochukwu "The Artist" (Ux/UI Designer)</h4>
-          <p>Ugochukwu transitioned from graphic design for Loud to digital Interfaces, <br>
-             infusing our app with an aesthetic that speaks <br>
-             to the soul of our users ensuring every swipe and tap feels amazing</p>
-          <div class="trainer__socials">
-            <a href="#"><i class="ri-facebook-fill"></i></a>
-            <a href="#"><i class="ri-twitter-fill"></i></a>
-            <a href="#"><i class="ri-youtube-fill"></i></a>
-          </div>
-          </div>
-
-
-          <div class="trainer__card">
-            <img src="assets/img/person2.jpg" alt="trainer" width="310" />
-            <h4>Onyeka "The code poet" (Frontend Developer)</h4>
-          <p>After years of teaching coding workshops to kids, <br>
-            Onyeka has a knack for making complex concepts simple, <br>
-             crafting a frontend that's not only beautiful buth also accessible to all</p>
-          <div class="trainer__socials">
-            <a href="#"><i class="ri-facebook-fill"></i></a>
-            <a href="#"><i class="ri-twitter-fill"></i></a>
-            <a href="#"><i class="ri-youtube-fill"></i></a>
-          </div>
-          </div>
-
-
-          <div class="trainer__card">
-            <img src="assets/img/person3.jpg" alt="trainer" width="310" />
-            <!-- <h4>DAVID WILLIAMS</h4>
-          <p>Body Builder Coach</p>
-          <div class="trainer__socials">
-            <a href="#"><i class="ri-facebook-fill"></i></a>
-            <a href="#"><i class="ri-twitter-fill"></i></a>
-            <a href="#"><i class="ri-youtube-fill"></i></a>
-          </div> -->
-          </div>
-
-
+ <!-- ----------- Our Team Section Start --------- -->
+<section class="our-team-section pt-110" data-scroll-index="8">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-8 col-lg-10">
+        <div class="section-title text-center pb-30">
+          <h1 class="wow fadeInUp" data-wow-delay=".2s">Our <span>Team</span></h1>
+          <p class="wow fadeInUp" data-wow-delay=".4s">
+            We are not just a group of tech wizards; we are a vibrant tapestry woven from diverse backgrounds, united by a single mission—to make Loud a global phenomenon.
+          </p>
         </div>
       </div>
     </div>
-  </section>
-  <!-- ----------- Our team Section End --------- -->
+
+    <div class="row justify-content-center">
+      <div class="team-container">
+        <!-- Team Member 1 -->
+        <div class="team-card wow fadeInUp" data-wow-delay=".2s">
+          <img src="assets/img/person.jpg" alt="Sylvester">
+          <h4>Sylvester "The Visionary"</h4>
+          <span>Founder</span>
+          <p>
+            From home builder to digital innovator, Sylvester’s attention to detail and creative prowess in product design set the foundation for Loud. A true servant leader.
+          </p>
+          <div class="team-socials">
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-card wow fadeInUp" data-wow-delay=".4s">
+          <img src="assets/img/person1.jpg" alt="Ugochukwu">
+          <h4>Ugochukwu "The Artist"</h4>
+          <span>UX/UI Designer</span>
+          <p>
+            From graphic design to digital interfaces, Ugochukwu crafts aesthetics that resonate with users, ensuring every interaction is smooth and engaging.
+          </p>
+          <div class="team-socials">
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="team-card wow fadeInUp" data-wow-delay=".6s">
+          <img src="assets/img/person2.jpg" alt="Onyeka">
+          <h4>Onyeka "The Code Poet"</h4>
+          <span>Frontend Developer</span>
+          <p>
+            A passionate educator turned developer, Onyeka specializes in crafting frontend experiences that are both beautiful and accessible to all users.
+          </p>
+          <div class="team-socials">
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ----------- Our Team Section End --------- -->
+
 
 
 
